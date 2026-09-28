@@ -24,7 +24,6 @@ public class FPSController : MonoBehaviour
 
     void Update()
     {
-        // ƒL[‚ğ—£‚µ‚½‚ç’â~
         if (Input.GetKeyUp(KeyCode.W) ||
             Input.GetKeyUp(KeyCode.S) ||
             Input.GetKeyUp(KeyCode.D) ||
@@ -66,15 +65,12 @@ public class FPSController : MonoBehaviour
             x = -1;
         }
 
-        // ˆÚ“®•ûŒü
         Vector3 move =
             transform.forward * z +
             transform.right * x;
 
-        // Î‚ßˆÚ“®‘¬“x‚ğ“ˆê
         move = move.normalized * moveSpeed;
 
-        // ˆÚ“®
         rb.linearVelocity = new Vector3(
             move.x,
             rb.linearVelocity.y,

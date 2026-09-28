@@ -9,7 +9,6 @@ public class RespawnItem : MonoBehaviour
 
     void Update()
     {
-        // ƒAƒCƒeƒ€‚ªÁ‚¦‚Ä‚¢‚éŽž‚¾‚¯”»’è
         if (!item.activeSelf &&
             Score.score >= nextRespawnScore)
         {

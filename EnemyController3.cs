@@ -30,7 +30,7 @@ public class EnemyController3 : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, target.position);
 
-        if (!isChasing)//–¢”­Œ©
+        if (!isChasing)
         {
             //ƒS[ƒ‹‚É‹ß‚Ã‚¢‚½‚çŸ‚ÌƒS[ƒ‹‚Ös‚­
             if (agent.remainingDistance < 0.5f)
@@ -43,7 +43,6 @@ public class EnemyController3 : MonoBehaviour
             }
         }
 
-        // ’ÇÕ’†
         if (isChasing)
         {
             agent.SetDestination(target.position);
